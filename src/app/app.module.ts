@@ -5,6 +5,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { BoxComponent } from './../components/box/box';
+import { ContactPage } from '../pages/contact/contact';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,7 +15,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
   declarations: [
     MyApp,
     HomePage,
-    BoxComponent
+    BoxComponent,
+    ContactPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ContactPage
   ],
   providers: [
     StatusBar,

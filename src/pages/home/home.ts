@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
+import { ContactPage } from './../contact/contact';
 
 @IonicPage({
   priority: 'high';
@@ -14,9 +15,7 @@ export class HomePage {
 
   }
 
-  onAbout(): void {
-    this.navCtrl.push('about-page', {
-      id: 10
-    });
+  pushPage(): void{
+    this.navCtrl.push(ContactPage);
   }
 }
