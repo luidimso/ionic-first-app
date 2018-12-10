@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { BoxComponent } from './../components/box/box';
 import { ContactPage } from '../pages/contact/contact';
+import { LifecycleEventsPage } from '../pages/lifecycle-events/lifecycle-events'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,7 +17,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     MyApp,
     HomePage,
     BoxComponent,
-    ContactPage
+    ContactPage,
+    LifecycleEventsPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
   entryComponents: [
     MyApp,
     HomePage,
-    ContactPage
+    ContactPage,
+    LifecycleEventsPage
   ],
   providers: [
     StatusBar,

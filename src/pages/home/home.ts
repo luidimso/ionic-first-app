@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
 import { ContactPage } from './../contact/contact';
+import { LifecycleEventsPage } from './../lifecycle-events/lifecycle-events';
 
 @IonicPage({
   priority: 'high';
@@ -30,5 +31,9 @@ export class HomePage {
     this.navCtrl.setRoot(ContactPage, {
       type: 'setRoot'
     });
+  }
+
+  lifecycle(): void{
+    this.navCtrl.push(LifecycleEventsPage);
   }
 }
