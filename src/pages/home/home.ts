@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage({
+  priority: 'high';
+})
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -12,6 +15,8 @@ export class HomePage {
   }
 
   onAbout(): void {
-    this.navCtrl.push('AboutPage');
+    this.navCtrl.push('about-page', {
+      id: 10
+    });
   }
 }

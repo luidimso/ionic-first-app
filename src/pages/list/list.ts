@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+@IonicPage({
+  priority: 'high'
+})
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
