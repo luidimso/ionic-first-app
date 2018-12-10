@@ -16,7 +16,9 @@ import { AboutPage } from '../pages/about/about';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      menuType: "reveal"
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
