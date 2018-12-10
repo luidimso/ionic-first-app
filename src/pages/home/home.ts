@@ -16,10 +16,19 @@ export class HomePage {
   }
 
   pushPage(): void{
-    this.navCtrl.push(ContactPage);
+    this.navCtrl.push(ContactPage, {
+      type: 'push',
+      course: 'Sistemas de Informação',
+      year: '2018',
+      message: () => {
+        alert("Bacharelado em Sistemas de Informação");
+      }
+    });
   }
 
   setRoot(): void{
-    this.navCtrl.setRoot(ContactPage);
+    this.navCtrl.setRoot(ContactPage, {
+      type: 'setRoot'
+    });
   }
 }

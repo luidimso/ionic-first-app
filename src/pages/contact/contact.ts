@@ -19,7 +19,7 @@ export class ContactPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactPage');
+    alert(this.navParams.data.year);
   }
 
   pushPage(): void{
