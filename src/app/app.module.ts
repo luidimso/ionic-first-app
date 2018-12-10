@@ -1,50 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { BoxComponent } from './../components/box/box';
-import { LifecycleEventsPage } from '../pages/lifecycle-events/lifecycle-events';
-import { ConfigPage } from '../pages/config/config';
-
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    BoxComponent,
-    LifecycleEventsPage,
-    ConfigPage
+    HomePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp, {
-      platforms:{
-        android: {
-          mode:'md'
-        },
-        ios: {
-          mode:'ios'
-        }
-      }
-    }),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    LifecycleEventsPage,
-    ConfigPage
+    HomePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    {provide: LocationStrategy, useClass: PathLocationStrategy}
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

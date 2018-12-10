@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
-import { ConfigPage } from './../config/config';
+import { NavController } from 'ionic-angular';
 
-@IonicPage({
-  priority: 'high';
-})
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -15,7 +11,4 @@ export class HomePage {
 
   }
 
-  onPush(): void{
-    this.navCtrl.push(ConfigPage);
-  }
 }
