@@ -42,18 +42,14 @@ export class ImprensaPage {
         console.log(d);
         d.unshift(news[0]);
         this.storage.set('news', JSON.stringify(d));
-        this.navCtrl.setRoot(HomePage, {
-          data: d
-        });
+        this.navCtrl.setRoot(HomePage);
 
         console.log(d);
       }
       	else {
           this.storage.set('news', JSON.stringify(news));
           console.log(news);
-          this.navCtrl.setRoot(HomePage, {
-          data: this.news
-        });
+          this.navCtrl.setRoot(HomePage);
     }
 
 

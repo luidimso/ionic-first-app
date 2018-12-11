@@ -39,4 +39,8 @@ export class MyApp {
   onImprensa(): void{
     this.nav.setRoot(ImprensaPage);
   }
+
+  onHome(): void{
+    this.nav.setRoot(HomePage);
+  }
 }

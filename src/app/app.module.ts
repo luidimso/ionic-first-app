@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { CustomHeaderComponent } from '../components/custom-header/custom-header';
 import { ImprensaPage } from '../pages/imprensa/imprensa';
+import { NoticiaPage } from '../pages/noticia/noticia';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ImprensaPage } from '../pages/imprensa/imprensa';
     HomePage,
     AboutPage,
     CustomHeaderComponent,
-    ImprensaPage
+    ImprensaPage,
+    NoticiaPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { ImprensaPage } from '../pages/imprensa/imprensa';
     MyApp,
     HomePage,
     AboutPage,
-    ImprensaPage
+    ImprensaPage,
+    NoticiaPage
   ],
   providers: [
     StatusBar,
