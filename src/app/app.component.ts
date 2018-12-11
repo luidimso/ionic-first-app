@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
+import { ImprensaPage } from '../pages/imprensa/imprensa';
 
 @Component({
   templateUrl: 'app.html'
@@ -35,7 +36,7 @@ export class MyApp {
     });
   }
 
-  openPage(page: {title: string, component: any}): void{
-    this.nav.setRoot(page.component);
+  onImprensa(): void{
+    this.nav.setRoot(ImprensaPage);
   }
 }

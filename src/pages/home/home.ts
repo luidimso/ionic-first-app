@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams, IonicPage } from 'ionic-angular';
 import { AboutPage } from './../about/about';
 
 @Component({
@@ -7,13 +7,14 @@ import { AboutPage } from './../about/about';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  news: [{
+    title: string,
+    sub: string,
+    new: string
+  }];
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
-  onAbout(): void{
-    this.navCtrl.push(AboutPage);
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.news = navParams.get('data');
   }
 
 }

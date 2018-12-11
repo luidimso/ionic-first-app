@@ -1,13 +1,27 @@
 <ion-menu [content]="myContent" persistent="true" swipeEnabled="false">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu 1</ion-title>
+      <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)" menuClose>{{p.title}}</button>
+      <button ion-item menuClose>Nossos Campi</button>
+      <button ion-item menuClose>Educação a Distância</button>
+      <button ion-item menuClose>Cursos</button>
+      <button ion-item menuClose>Seleções</button>
+      <button ion-item menuClose>Conheça o IFFluminense</button>
+      <button ion-item menuClose>Reitoria</button>
+      <button ion-item menuClose>Ensino</button>
+      <button ion-item menuClose>Extensão</button>
+      <button ion-item menuClose>Pesquisa</button>
+      <button ion-item menuClose>Gestão e Planejamento</button>
+      <button ion-item menuClose>Painel do Estudante</button>
+      <button ion-item menuClose>Painel do Servidor</button>
+      <button ion-item menuClose>Essentia Editora</button>
+      <button ion-item menuClose>Ouvidoria</button>
+      <button ion-item menuClose>Acesso à Informação</button>
     </ion-list>
   </ion-content>
 </ion-menu>
@@ -15,13 +29,20 @@
 <ion-menu [content]="myContent" persistent="true" swipeEnabled="false" side="right">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu 2</ion-title>
+      <ion-title>Institucional</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)" menuClose>{{p.title}}</button>
+      <button ion-item menuClose="right">Contato</button>
+      <button ion-item menuClose="right" (click)="onImprensa()">Área de Imprensa</button>
+      <button ion-item menuClose="right">Webmail</button>
+      <button ion-item menuClose="right">Painel do Servidor</button>
+      <button ion-item menuClose="right">SUAP</button>
+      <button ion-item menuClose="right">Sistema Acadêmico</button>
+      <button ion-item menuClose="right">CDD</button>
+      <button ion-item menuClose="right">Portal da TIC</button>
     </ion-list>
   </ion-content>
 </ion-menu>

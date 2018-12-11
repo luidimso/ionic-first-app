@@ -4,5 +4,38 @@
 
 
 <ion-content padding>
+  <iframe class= 'webPage' name= "samplePage" src="http://portal1.iff.edu.br/"></iframe>
+
+  <button ion-item *ngFor="let p of pages" (click)="openPage(p)" menuClose>{{p.title}}</button>
+  <button ion-button block (click)="onAbout()">About Page</button>
+  <button ion-button block outline (click)="onAbout()">About Page</button>
+  <button ion-button block clear (click)="onAbout()">About Page</button>
+  <button ion-button block round (click)="onAbout()">About Page</button>
+  <button ion-button block full (click)="onAbout()">About Page</button>
+  <button ion-button icon-left (click)="onAbout()"><ion-icon name="arrow-back"></ion-icon>Back</button>
+
+  <ion-card>
+    <ion-card-header>
+      Cabeçalho
+    </ion-card-header>
+    <ion-card-content>
+      <img src="https://www.urbanarts.com.br/imagens/produtos/165137/0/Ampliada/luigi-nintendo.jpg">
+      Conteúdo
+      <ion-list>
+        <button ion-item icon-left><ion-icon name="cart"></ion-icon>Shopping</button>
+        <button ion-item icon-left><ion-icon name="cafe"></ion-icon>Coffee</button>
+        <button ion-item icon-left><ion-icon name="planet"></ion-icon>Space</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons>
+        <button ion-button icon-only (click)="onAbout()"><ion-icon name="add"></ion-icon></button>
+        <button ion-button icon-only (click)="onAbout()"><ion-icon name="contact"></ion-icon></button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
 
 </ion-content>
