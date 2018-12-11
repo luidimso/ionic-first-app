@@ -1,7 +1,21 @@
 <ion-menu [content]="myContent" persistent="true" swipeEnabled="false">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <ion-title>Menu 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)" menuClose>{{p.title}}</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-menu [content]="myContent" persistent="true" swipeEnabled="false" side="right">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu 2</ion-title>
     </ion-toolbar>
   </ion-header>
 
